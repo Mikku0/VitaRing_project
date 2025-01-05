@@ -1,0 +1,67 @@
+# Bazy danych SQLite
+db.sqlite3
+*.sqlite3
+
+# Foldery tymczasowe i logi
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+*.py[co]
+*~
+*.swp
+*.swo
+
+# Folder migracji Django (bez inicjalnego pliku)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Foldery środowiska wirtualnego
+venv/
+env/
+.venv/
+ENV/
+
+# Konfiguracje IDE i edytorów
+.vscode/
+.idea/
+*.iml
+
+# Pliki modeli TensorFlow/Keras
+*.pb
+*.ckpt
+__pycache__/
+*.hdf5
+
+# Pliki z danymi i modelami
+
+*.csv
+*.pickle
+*.model
+*.log
+
+# Pliki statyczne wygenerowane przez Django
+#staticfiles/
+media/
+node_modules/
+
+# Pliki konfiguracji narzędzi testowych
+.coverage
+pytest_cache/
+.tox/
+nosetests.xml
+*.cover
+
+# Tokeny, klucze i sekrety
+*.env
+.env
+*.secrets
+secrets.json
+
+# Pliki do generowania przez system operacyjny
+.DS_Store
+Thumbs.db
+
+# Pliki Ngrok (jeśli używasz)
+ngrok.log
