@@ -1312,17 +1312,31 @@ video {
 .alert-warning {
     background-color: #ff9800;
 }
+/* Stylowanie okna czatu */
 
 /* Stylowanie okna czatu */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212; /* Tło strony */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 #chatbox {
-    width: 800px; /* 2x szersze */
+    width: 80%; /* Ustawia szerokość na 80% ekranu */
+    max-width: 800px; /* Maksymalna szerokość 800px */
     height: 500px;
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #2c2f36; /* Ciemne tło */
     color: #fff; /* Biała czcionka w oknie czatu */
-    font-family: Arial, sans-serif;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #chatlog {
@@ -1351,6 +1365,7 @@ video {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    align-self: flex-end; /* Ustawia przycisk na prawo */
 }
 
 #send_button:hover {
@@ -1363,4 +1378,27 @@ video {
 
 .user-message {
     color: #fff; /* Biała czcionka dla użytkownika */
+}
+
+/* Stylizacja dla widoku na urządzenia mobilne */
+@media (max-width: 768px) {
+    #chatbox {
+        width: 90%; /* Na mniejszych ekranach zajmuje 90% szerokości */
+        height: 80vh; /* Na mniejszych ekranach wysokość to 80% ekranu */
+    }
+
+    #user_input {
+        height: 60px; /* Większy rozmiar pola input na telefonach */
+    }
+
+    #send_button {
+        width: 90%; /* Przyciski zajmują większą część ekranu na telefonach */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #send_button {
+        width: 100%; /* Pełna szerokość przycisku na bardzo małych ekranach */
+    }
 }
