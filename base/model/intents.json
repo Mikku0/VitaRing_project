@@ -1,0 +1,154 @@
+{
+  "intents": [
+    {
+      "tag": "heart_rate_monitoring",
+      "patterns": [
+        "Monitorowanie tętna",
+        "Jak mogę sprawdzić moje tętno?",
+        "Jakie są moje wyniki tętna?",
+        "Chciałbym sprawdzić moje tętno",
+        "Tętno jest zbyt wysokie, co robić?"
+      ],
+      "responses": [
+        "Tętno jest kluczowym parametrem zdrowia. Możesz sprawdzić je teraz, aby uzyskać dane na temat kondycji serca.",
+        "Tętno jest monitorowane przez VitaRing i możesz otrzymać raport na temat aktualnych wyników."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sleep_quality",
+      "patterns": [
+        "Jak monitorować jakość snu?",
+        "Jak mogę poprawić mój sen?",
+        "Jaki jest stan mojego snu?",
+        "Pomóż mi poprawić jakość snu",
+        "Co mogę zrobić, aby lepiej spać?"
+      ],
+      "responses": [
+        "VitaRing monitoruje fazy snu i analizuje dane, które pomogą Ci poprawić jakość snu.",
+        "Zarządzaj jakością snu poprzez rekomendacje dostosowane do Twoich wyników. Sprawdź wyniki snu w aplikacji."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "stress_management",
+      "patterns": [
+        "Jak radzić sobie ze stresem?",
+        "Potrzebuję porady na temat stresu",
+        "Jakie ćwiczenia mogą pomóc w walce ze stresem?",
+        "Jakie techniki relaksacyjne są najlepsze?",
+        "Pomóż mi zredukować stres"
+      ],
+      "responses": [
+        "VitaRing analizuje poziom stresu i może dostarczyć Ci personalizowane porady, jak zarządzać stresem.",
+        "Skorzystaj z ćwiczeń oddechowych i innych technik relaksacyjnych, które są dostępne w aplikacji VitaRing."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "physical_activity",
+      "patterns": [
+        "Jak mogę zwiększyć moją aktywność fizyczną?",
+        "Sprawdź mój dzienny poziom aktywności",
+        "Jakie ćwiczenia są dla mnie odpowiednie?",
+        "Chciałbym śledzić moje kroki",
+        "Jak mogę zoptymalizować trening?"
+      ],
+      "responses": [
+        "VitaRing śledzi Twoją aktywność fizyczną, w tym liczbę kroków i spalanie kalorii. Możesz sprawdzić dzienne postępy w aplikacji.",
+        "Na podstawie danych o Twojej aktywności VitaRing dostarczy Ci odpowiednie rekomendacje dotyczące treningu."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_saturation",
+      "patterns": [
+        "Sprawdź moje poziomy saturacji krwi",
+        "Jak sprawdzić SpO2?",
+        "Jakie są moje wyniki saturacji?",
+        "Monitorowanie saturacji krwi",
+        "Czy moje SpO2 jest w normie?"
+      ],
+      "responses": [
+        "Saturacja krwi to ważny wskaźnik zdrowia. Sprawdź wyniki w aplikacji VitaRing, aby dowiedzieć się, jak poprawić poziom SpO2.",
+        "Monitorowanie saturacji krwi jest kluczowe, aby wykrywać ewentualne problemy oddechowe. Sprawdź wyniki saturacji."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "personalized_health_recommendations",
+      "patterns": [
+        "Chciałbym otrzymać rekomendacje zdrowotne",
+        "Daj mi rekomendacje na podstawie moich wyników",
+        "Jakie mam rekomendacje zdrowotne?",
+        "Co mogę zrobić, aby poprawić moje zdrowie?",
+        "Rekomendacje zdrowotne na podstawie moich danych"
+      ],
+      "responses": [
+        "Na podstawie Twoich wyników VitaRing generuje personalizowane rekomendacje zdrowotne. Sprawdź aplikację, aby dowiedzieć się więcej.",
+        "Dostosowane rekomendacje zdrowotne pomogą Ci poprawić kondycję fizyczną i psychiczną."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "device_instructions",
+      "patterns": [
+        "Jak używać VitaRing?",
+        "Instrukcja obsługi urządzenia",
+        "Gdzie mogę znaleźć instrukcje dotyczące VitaRing?",
+        "Jak działa VitaRing?",
+        "Co muszę zrobić, aby używać urządzenia?"
+      ],
+      "responses": [
+        "VitaRing jest łatwy w obsłudze, a wszystkie instrukcje znajdziesz w aplikacji. Możesz również skorzystać z naszej pomocy online.",
+        "Aby uzyskać instrukcje, zapoznaj się z sekcją wsparcia w aplikacji VitaRing."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "mental_health_support",
+      "patterns": [
+        "Jak mogę poprawić swoje zdrowie psychiczne?",
+        "Potrzebuję wsparcia psychicznego",
+        "Jakie techniki pomagają w zdrowiu psychicznym?",
+        "Co robić, gdy czuję się przytłoczony?",
+        "Pomóż mi poprawić moje zdrowie psychiczne"
+      ],
+      "responses": [
+        "VitaRing dostarcza rekomendacje dotyczące zdrowia psychicznego, takie jak ćwiczenia relaksacyjne i techniki oddechowe.",
+        "Skorzystaj z porad dostępnych w aplikacji, aby poprawić samopoczucie i obniżyć poziom stresu."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "remote_health_assistance",
+      "patterns": [
+        "Czy mogę otrzymać pomoc zdrowotną online?",
+        "Potrzebuję konsultacji online z lekarzem",
+        "Jak umówić się na wizytę online?",
+        "Czy mogę skonsultować się z lekarzem zdalnie?",
+        "Potrzebuję pomocy medycznej online"
+      ],
+      "responses": [
+        "VitaRing oferuje wsparcie zdalne z pomocą medyczną online. Umów się na wizytę, aby uzyskać pomoc.",
+        "Skorzystaj z opcji konsultacji zdalnych, aby uzyskać pomoc od specjalistów."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "physical_therapy_support",
+      "patterns": [
+        "Chciałbym otrzymać wsparcie w terapii fizycznej",
+        "Jakie ćwiczenia fizyczne polecacie?",
+        "Potrzebuję pomocy w terapii fizycznej",
+        "Jakie są dostępne opcje terapii fizycznej?",
+        "Pomóż mi poprawić moje wyniki w terapii fizycznej"
+      ],
+      "responses": [
+        "VitaRing oferuje rekomendacje terapeutyczne, które pomagają w rehabilitacji fizycznej. Możesz śledzić postępy i dostosować ćwiczenia.",
+        "Skorzystaj z dostępnych w aplikacji zaleceń dotyczących terapii fizycznej, aby poprawić swoje zdrowie."
+      ],
+      "context": [""]
+    }
+  ]
+}
