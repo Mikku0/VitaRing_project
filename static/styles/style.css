@@ -1342,6 +1342,7 @@ body {
 
 #chatlog {
     margin-bottom: 10px;
+    overflow-y: auto;
 }
 
 #user_input {
@@ -1375,19 +1376,19 @@ body {
     background-color: #333;
     padding: 10px;
     border-radius: 20px;
-    max-width: 70%;
-    margin-left: 20px;
+    max-width: 100%;
+    margin-right: 20px;
     margin-bottom: 10px;
     word-wrap: break-word;
 }
 
 .user-message {
     color: #fff;
-    background-color: #ff5722;
+    background-color: #000000;
     padding: 10px;
     border-radius: 20px;
-    max-width: 70%;
-    margin-right: 20px;
+    max-width: 100%;
+    margin-left: 20px;
     margin-bottom: 10px;
     word-wrap: break-word;
 }
