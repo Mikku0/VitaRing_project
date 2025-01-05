@@ -149,6 +149,142 @@
         "Skorzystaj z dostępnych w aplikacji zaleceń dotyczących terapii fizycznej, aby poprawić swoje zdrowie."
       ],
       "context": [""]
+    },
+    {
+      "tag": "vita_ring_info",
+      "patterns": [
+        "Czym jest VitaRing?",
+        "Co to jest VitaRing?",
+        "Co oferuje VitaRing?",
+        "Jak działa VitaRing?",
+        "Opowiedz mi o VitaRing"
+      ],
+      "responses": [
+        "VitaRing to inteligentny pierścień zdrowotny, który monitoruje Twoje zdrowie, w tym tętno, sen, poziom stresu i aktywność fizyczną.",
+        "Jest to urządzenie, które pomaga w monitorowaniu parametrów zdrowotnych i dostarcza spersonalizowane rekomendacje na ich podstawie.",
+        "VitaRing to nowoczesna technologia, która dba o Twoje zdrowie, analizując dane zebrane z różnych czujników."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "vita_ring_purpose",
+      "patterns": [
+        "Jakie korzyści płyną z używania VitaRing?",
+        "Do czego służy VitaRing?",
+        "Dlaczego warto używać VitaRing?",
+        "Jaka jest główna funkcjonalność VitaRing?"
+      ],
+      "responses": [
+        "VitaRing pomaga monitorować kluczowe parametry zdrowotne, takie jak tętno, poziom stresu, jakość snu i aktywność fizyczną.",
+        "Używanie VitaRing pozwala na uzyskiwanie spersonalizowanych rekomendacji zdrowotnych oraz dostęp do zdalnej opieki medycznej."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": [
+        "Kim jesteś?",
+        "Co to za bot?",
+        "Kim ty jesteś?",
+        "Czym jesteś?",
+        "Opowiedz mi o sobie"
+      ],
+      "responses": [
+        "Jestem chatbotem stworzonym, aby pomóc Ci w korzystaniu z VitaRing. Odpowiem na pytania dotyczące monitorowania zdrowia i funkcji urządzenia.",
+        "Jestem asystentem stworzonym do pomagania w kwestiach związanych z VitaRing. Mogę udzielać informacji na temat Twojego zdrowia oraz urządzenia.",
+        "Jestem chatbotem, który pomaga Ci w pełni wykorzystać możliwości VitaRing, monitorując Twoje parametry zdrowotne i udzielając rekomendacji."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hydration",
+      "patterns": [
+        "Jakie jest moje dzienne zapotrzebowanie na wodę?",
+        "Ile wody powinienem pić codziennie?",
+        "Czy jestem wystarczająco nawodniony?",
+        "Pomóż mi kontrolować spożycie wody",
+        "Jakie są objawy odwodnienia?"
+      ],
+      "responses": [
+        "Nawodnienie jest kluczowe dla zdrowia. Sprawdź swoje dzienne zapotrzebowanie na wodę w aplikacji VitaRing.",
+        "Dorosły człowiek powinien pić około 2-3 litrów wody dziennie, zależnie od aktywności fizycznej i temperatury."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "meal_plan",
+      "patterns": [
+        "Czy mogę uzyskać plan diety?",
+        "Jakie posiłki są najlepsze na zdrową dietę?",
+        "Jakie jedzenie polecasz?",
+        "Co jeść, żeby poprawić zdrowie?",
+        "Czy VitaRing może pomóc w planowaniu posiłków?"
+      ],
+      "responses": [
+        "VitaRing dostarcza rekomendacje dotyczące zdrowego odżywiania na podstawie Twoich wyników zdrowotnych.",
+        "Aby uzyskać plan diety, zapoznaj się z sekcją diety w aplikacji VitaRing."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "immunity",
+      "patterns": [
+        "Jak poprawić moją odporność?",
+        "Co mogę zrobić, żeby wzmocnić odporność?",
+        "Jakie suplementy poprawiają odporność?",
+        "Jakie jedzenie jest dobre na odporność?",
+        "Czy mogę poprawić swoją odporność za pomocą VitaRing?"
+      ],
+      "responses": [
+        "Zdrowa dieta, regularne ćwiczenia oraz odpowiednia ilość snu pomagają w budowaniu silnej odporności.",
+        "VitaRing nie tylko monitoruje Twoje zdrowie, ale może dostarczyć porady dotyczące wzmocnienia odporności na podstawie wyników."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "heart_health",
+      "patterns": [
+        "Jak poprawić zdrowie serca?",
+        "Co mogę zrobić, aby zapobiec chorobom serca?",
+        "Jakie ćwiczenia są dobre dla serca?",
+        "Czy moje wyniki serca są w normie?",
+        "Jakie jedzenie jest dobre dla serca?"
+      ],
+      "responses": [
+        "Regularne ćwiczenia aerobowe, takie jak chodzenie, bieganie czy pływanie, pomagają w utrzymaniu zdrowego serca.",
+        "Dbaj o zdrową dietę, bogatą w błonnik, owoce i warzywa. VitaRing pomoże Ci monitorować stan zdrowia serca."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "mental_clarity",
+      "patterns": [
+        "Jak poprawić moją koncentrację?",
+        "Co robić, żeby poprawić jasność myślenia?",
+        "Jak zwiększyć produktywność?",
+        "Co pomaga w lepszej koncentracji?",
+        "Jakie techniki pomagają w poprawie koncentracji?"
+      ],
+      "responses": [
+        "Medytacja, regularne przerwy oraz zdrowy styl życia mogą znacząco poprawić Twoją koncentrację.",
+        "Zarządzaj stresem i popraw jakość snu, aby zyskać lepszą mentalną klarowność. VitaRing pomoże Ci w monitorowaniu tych aspektów."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "weight_management",
+      "patterns": [
+        "Jak mogę schudnąć?",
+        "Co robić, żeby utrzymać wagę?",
+        "Jakie ćwiczenia pomagają schudnąć?",
+        "Czy VitaRing pomoże mi w zarządzaniu wagą?",
+        "Jakie są skuteczne metody utraty wagi?"
+      ],
+      "responses": [
+        "Regularne ćwiczenia oraz zdrowa dieta to kluczowe elementy skutecznego zarządzania wagą.",
+        "VitaRing może pomóc w monitorowaniu Twoich postępów i dostarczyć rekomendacje dotyczące utraty wagi."
+      ],
+      "context": [""]
     }
   ]
 }
