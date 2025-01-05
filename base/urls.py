@@ -18,5 +18,5 @@ urlpatterns = [
     path('update-user/', views.update_user, name='update-user'),
     path('topics/', views.topics_page, name='topics'),
     path('activity/', views.activity_page, name='activity'),
-    path('chatbot/', chatbot_response, name='chatbot_response'),
+    path('chatbot/', views.chatbot_response, name='chatbot_response'),
 ]
