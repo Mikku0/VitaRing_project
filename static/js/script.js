@@ -88,21 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById("send_button").addEventListener("click", function() {
-    sendMessage();
-});
-
-document.getElementById("user_input").addEventListener("keydown", function(e) {
-    if (e.key === "Enter" && !e.shiftKey) {  // Jeśli naciśnięto Enter bez Shift
-        e.preventDefault();  // Zapobiega domyślnemu zachowaniu (dodanie nowej linii)
-        sendMessage();
-    }
-});
-
-function sendMessage() {
     let message = document.getElementById("user_input").value;
     let csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;  // Pobierz token CSRF
-
-    if (message.trim() === "") return;  // Jeśli wiadomość jest pusta, nie wysyłaj
 
     fetch('/chatbot/', {
         method: 'POST',
@@ -115,9 +102,27 @@ function sendMessage() {
     .then(response => response.json())
     .then(data => {
         let chatlog = document.getElementById("chatlog");
-        chatlog.innerHTML += `<p class="user-message"><strong>You:</strong> ${message}</p>`;
-        chatlog.innerHTML += `<p class="bot-message"><strong>Bot:</strong> ${data.response}</p>`;
+
+        // Dodaj wiadomość użytkownika
+        let userMessage = document.createElement('div');
+        userMessage.classList.add('user-message');
+        userMessage.innerHTML = "<strong>You:</strong> " + message;
+        chatlog.appendChild(userMessage);
+
+        // Dodaj odpowiedź chatbota
+        let botMessage = document.createElement('div');
+        botMessage.classList.add('bot-message');
+        botMessage.innerHTML = "<strong>Bot:</strong> " + data.response;
+        chatlog.appendChild(botMessage);
+
         document.getElementById("user_input").value = '';  // Wyczyść pole po wysłaniu
         chatlog.scrollTop = chatlog.scrollHeight;  // Przewiń do dołu
     });
-}
+});
+
+document.getElementById("user_input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        document.getElementById("send_button").click();  // Wyślij wiadomość po Enter
+    }
+});

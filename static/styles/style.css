@@ -1313,8 +1313,6 @@ video {
     background-color: #ff9800;
 }
 /* Stylowanie okna czatu */
-
-/* Stylowanie okna czatu */
 body {
     display: flex;
     justify-content: center;
@@ -1336,13 +1334,11 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end; /* Dodatkowe ustawienie, by nowe wiadomości były na dole */
+    overflow-y: auto;
 }
 
 #chatlog {
-    height: 400px;
-    overflow-y: auto;
-    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -1374,10 +1370,24 @@ body {
 
 .bot-message {
     color: #ff5722; /* Pomarańczowy kolor dla odpowiedzi chatbota */
+    background-color: #333; /* Ciemne tło wiadomości chatbota */
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    margin-left: 20px; /* Wiadomość chatbota po lewej */
+    margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .user-message {
     color: #fff; /* Biała czcionka dla użytkownika */
+    background-color: #ff5722; /* Pomarańczowe tło wiadomości użytkownika */
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    margin-right: 20px; /* Wiadomość użytkownika po prawej */
+    margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 /* Stylizacja dla widoku na urządzenia mobilne */
