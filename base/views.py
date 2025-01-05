@@ -6,6 +6,7 @@ from django.db.models import Q, Count
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from .chatbot_views import chatbot_response
 
 
 def login_page(request):
