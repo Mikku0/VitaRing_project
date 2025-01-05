@@ -1380,6 +1380,7 @@ body {
     margin-right: 20px;
     margin-bottom: 10px;
     word-wrap: break-word;
+    width: fit-content;
 }
 
 .user-message {
@@ -1388,9 +1389,11 @@ body {
     padding: 10px;
     border-radius: 20px;
     max-width: 100%;
-    margin-left: 20px;
+    margin-left: auto;
     margin-bottom: 10px;
     word-wrap: break-word;
+    justify-content: flex-end;
+    width: fit-content;
 }
 
 /* Stylizacja dla widoku na urządzenia mobilne */
