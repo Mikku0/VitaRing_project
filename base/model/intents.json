@@ -285,6 +285,126 @@
         "VitaRing może pomóc w monitorowaniu Twoich postępów i dostarczyć rekomendacje dotyczące utraty wagi."
       ],
       "context": [""]
+    },
+    {
+      "tag": "user_registration",
+      "patterns": [
+        "Jak mogę zarejestrować się w aplikacji?",
+        "Czy mogę założyć konto?",
+        "Chciałbym się zarejestrować",
+        "Jak stworzyć konto?",
+        "Czy potrzebuję konta, żeby korzystać z aplikacji?"
+      ],
+      "responses": [
+        "Aby zarejestrować się w aplikacji, wystarczy wypełnić formularz rejestracyjny i podać wymagane dane. Po zarejestrowaniu konta, będziesz mógł korzystać ze wszystkich funkcji.",
+        "Rejestracja jest łatwa i szybka! Wypełnij formularz rejestracyjny i gotowe!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "profile_management",
+      "patterns": [
+        "Jak mogę zaktualizować moje dane?",
+        "Chciałbym edytować swój profil",
+        "Jak zmienić moje dane osobowe?",
+        "Czy mogę zaktualizować informacje o moim zdrowiu?",
+        "Gdzie mogę zaktualizować moje ustawienia?"
+      ],
+      "responses": [
+        "Aby zaktualizować swój profil, wejdź do sekcji ustawień w aplikacji, gdzie możesz zmienić swoje dane osobowe, preferencje oraz informacje zdrowotne.",
+        "Zmiana danych profilowych jest możliwa w zakładce ustawień. Tam znajdziesz wszystkie opcje edycji."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "subscription_plans",
+      "patterns": [
+        "Jakie plany subskrypcyjne oferuje VitaRing?",
+        "Chciałbym dowiedzieć się o dostępnych subskrypcjach",
+        "Czy są dostępne plany premium?",
+        "Jakie korzyści oferują subskrypcje?",
+        "Czy mogę sprawdzić dostępne opcje subskrypcji?"
+      ],
+      "responses": [
+        "VitaRing oferuje kilka planów subskrypcyjnych, które różnią się funkcjonalnościami i ceną. Sprawdź dostępne opcje w aplikacji, aby wybrać plan, który najlepiej odpowiada Twoim potrzebom.",
+        "W zależności od wybranego planu subskrypcyjnym, otrzymasz dostęp do różnych funkcji, takich jak zaawansowane raporty zdrowotne czy personalizowane rekomendacje."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "device_pairing",
+      "patterns": [
+        "Jak połączyć VitaRing z aplikacją?",
+        "Jak sparować urządzenie z moim telefonem?",
+        "Nie mogę połączyć VitaRing z telefonem, co zrobić?",
+        "Jak zsynchronizować dane z urządzeniem?",
+        "Połączenie z urządzeniem nie działa, co robić?"
+      ],
+      "responses": [
+        "Aby połączyć VitaRing z aplikacją, wejdź do ustawień urządzenia i postępuj zgodnie z instrukcjami na ekranie.",
+        "Upewnij się, że urządzenie jest włączone i znajduje się w zasięgu Bluetooth, a następnie spróbuj ponownie sparować je z aplikacją."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "data_syncing",
+      "patterns": [
+        "Dlaczego moje dane nie są synchronizowane?",
+        "Jak mogę zsynchronizować dane z aplikacją?",
+        "Mam problem z synchronizacją danych",
+        "Jakie dane są synchronizowane z VitaRing?",
+        "Czy dane zdrowotne są automatycznie synchronizowane?"
+      ],
+      "responses": [
+        "Dane są synchronizowane automatycznie, ale w przypadku problemów z synchronizacją, upewnij się, że masz połączenie z internetem oraz włączoną opcję synchronizacji w aplikacji.",
+        "W razie problemów spróbuj ponownie uruchomić aplikację lub sprawdź ustawienia synchronizacji w aplikacji VitaRing."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "vitaRing_features",
+      "patterns": [
+        "Jakie funkcje oferuje VitaRing?",
+        "Czym różni się VitaRing od innych urządzeń?",
+        "Jakie funkcje ma VitaRing?",
+        "Co potrafi VitaRing?",
+        "Czy VitaRing monitoruje zdrowie?"
+      ],
+      "responses": [
+        "VitaRing oferuje szereg funkcji zdrowotnych, w tym monitorowanie jakości snu, tętna, poziomu stresu, aktywności fizycznej oraz saturacji krwi. Urządzenie analizuje te dane i dostarcza spersonalizowane rekomendacje.",
+        "VitaRing śledzi Twoje zdrowie, zapewniając dane o tętna, poziomie stresu, aktywności fizycznej oraz jakości snu. Oferuje również możliwość umawiania wizyt lekarskich na podstawie lokalizacji."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "vitaRing_charging",
+      "patterns": [
+        "Jak ładować VitaRing?",
+        "Gdzie podłączyć VitaRing do ładowania?",
+        "Jakie są zasady ładowania VitaRing?",
+        "Czy VitaRing jest wodoodporny podczas ładowania?",
+        "Jak należy ładować VitaRing?"
+      ],
+      "responses": [
+        "Aby naładować VitaRing, podłącz urządzenie do ładowarki przy pomocy dedykowanego kabla. Upewnij się, że port ładowania jest czysty i wolny od zanieczyszczeń.",
+        "Zaleca się ładowanie VitaRing na równych powierzchniach i unikanie używania urządzenia podczas ładowania, aby zapewnić bezpieczeństwo."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "vitaRing_charging_time",
+      "patterns": [
+        "Jak długo ładuje się VitaRing?",
+        "Ile czasu zajmuje pełne naładowanie VitaRing?",
+        "Jak długo trwa ładowanie VitaRing?",
+        "Czas ładowania VitaRing",
+        "Ile minut potrzeba, żeby VitaRing był naładowany?"
+      ],
+      "responses": [
+        "Ładowanie VitaRing zajmuje zwykle około 1-2 godziny, w zależności od poziomu naładowania baterii.",
+        "Pełne naładowanie VitaRing trwa zazwyczaj około 2 godzin. Pamiętaj, aby nie pozostawiać urządzenia na ładowaniu przez zbyt długi czas."
+      ],
+      "context": [""]
     }
   ]
 }
