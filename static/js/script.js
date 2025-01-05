@@ -61,11 +61,13 @@ document.getElementById("send_button").addEventListener("click", function() {
         // Dodaj wiadomość użytkownika
         let userMessage = document.createElement('div');
         userMessage.classList.add('user-message');
+        userMessage.innerHTML = "" + message;
         chatlog.appendChild(userMessage);
 
         // Dodaj odpowiedź chatbota
         let botMessage = document.createElement('div');
         botMessage.classList.add('bot-message');
+        botMessage.innerHTML = "" + data.response;
         chatlog.appendChild(botMessage);
 
         document.getElementById("user_input").value = '';  // Wyczyść pole po wysłaniu
