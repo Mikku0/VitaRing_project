@@ -1320,45 +1320,6 @@ body {
     background-color: #121212; /* Tło strony */
 }
 
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-start;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav a:hover {
-    background-color: #444;
-    border-radius: 5px;
-}
-
 /* Stylowanie okna czatu */
 #chatbox {
     width: 80%;
