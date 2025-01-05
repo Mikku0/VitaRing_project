@@ -87,3 +87,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.getElementById("send_button").addEventListener("click", function() {
+    let message = document.getElementById("user_input").value;
+    let csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;  // Pobierz token CSRF
+
+    if (message.trim() === "") return;  // Zapobiegaj wysyłaniu pustych wiadomości
+
+    // Wyślij zapytanie do backendu
+    fetch('/chatbot/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRFToken': csrfToken,  // Dodaj token CSRF do nagłówka
+        },
+        body: 'message=' + encodeURIComponent(message),
+    })
+    .then(response => response.json())
+    .then(data => {
+        let chatlog = document.getElementById("chatlog");
+        chatlog.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
+        chatlog.innerHTML += "<p><strong>Bot:</strong> " + data.response + "</p>";
+        document.getElementById("user_input").value = '';  // Wyczyść pole po wysłaniu
+        chatlog.scrollTop = chatlog.scrollHeight;  // Przewiń do dołu
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Something went wrong. Please try again later.");
+    });
+});

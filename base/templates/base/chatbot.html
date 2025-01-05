@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link do zewnętrznego pliku CSS -->
+</head>
+<body>
+    <div id="chatbox">
+        <div id="chatlog"></div>
+        <textarea id="user_input" placeholder="Write a message..."></textarea>
+        <button id="send_button">Send</button>
+    </div>
+
+    <!-- Dodaj token CSRF -->
+    <form method="POST" id="csrf_form" style="display: none;">
+        {% csrf_token %}
+    </form>
+
+    <script src="script.js"></script> <!-- Link do zewnętrznego pliku JavaScript -->
+</body>
+</html>
